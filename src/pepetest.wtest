@@ -1,32 +1,32 @@
 import pepe.*
 
 // Cadete
-test "cadete-nofalto-sobreElNeto" {
+test "cadete-noFalto-sobreElNeto" {
 	
 	assert.equals(1750,pepe.sueldo())
 }
-test "cadete-nofalto-fijos" {
+test "cadete-noFalto-fijos" {
 	pepe.cambioDeResultado(fijo)
 	assert.equals(1680,pepe.sueldo())
 }
 
-test "cadete-nofalto-nada" {
+test "cadete-noFalto-nada" {
 	pepe.cambioDeResultado(nada)
 	assert.equals(1600,pepe.sueldo())
 }
 
-test "cadete-faltounavez-sobreElNeto" {
-	pepe.cambioDePresentismo(faltounavez)
+test "cadete-faltoUnaVez-sobreElNeto" {
+	pepe.cambioDePresentismo(faltoUnaVez)
 	assert.equals(1700,pepe.sueldo())
 }
 test "cadete-faltounavez-fijos" {
-	pepe.cambioDePresentismo(faltounavez)
+	pepe.cambioDePresentismo(faltoUnaVez)
 	pepe.cambioDeResultado(fijo)
 	assert.equals(1630,pepe.sueldo())
 }
 
 test "cadete-faltounavez-nada" {
-	pepe.cambioDePresentismo(faltounavez)
+	pepe.cambioDePresentismo(faltoUnaVez)
 	pepe.cambioDeResultado(nada)
 	assert.equals(1550,pepe.sueldo())
 }
@@ -50,37 +50,37 @@ test "cadete-falto-nada" {
 
 // Gerente
 
-test "gerente-nofalto-sobreElNeto" {
+test "gerente-noFalto-sobreElNeto" {
 	pepe.cambioDeCategoria(gerente)
 	assert.equals(1200,pepe.sueldo())
 }
-test "gerente-nofalto-fijos" {
+test "gerente-noFalto-fijos" {
 	pepe.cambioDeCategoria(gerente)
 	pepe.cambioDeResultado(fijo)
 	assert.equals(1180,pepe.sueldo())
 }
 
-test "gerente-nofalto-nada" {
+test "gerente-noFalto-nada" {
 	pepe.cambioDeCategoria(gerente)
 	pepe.cambioDeResultado(nada)
 	assert.equals(1100,pepe.sueldo())
 }
 
-test "gerente-faltounavez-sobreElNeto" {
+test "gerente-faltoUnaVez-sobreElNeto" {
 	pepe.cambioDeCategoria(gerente)
-	pepe.cambioDePresentismo(faltounavez)
+	pepe.cambioDePresentismo(faltoUnaVez)
 	assert.equals(1150,pepe.sueldo())
 }
-test "gerente-faltounavez-fijos" {
+test "gerente-faltoUnaVez-fijos" {
 	pepe.cambioDeCategoria(gerente)
-	pepe.cambioDePresentismo(faltounavez)
+	pepe.cambioDePresentismo(faltoUnaVez)
 	pepe.cambioDeResultado(fijo)
 	assert.equals(1130,pepe.sueldo())
 }
 
-test "gerente-faltounavez-nada" {
+test "gerente-faltoUnaVez-nada" {
 	pepe.cambioDeCategoria(gerente)
-	pepe.cambioDePresentismo(faltounavez)
+	pepe.cambioDePresentismo(faltoUnaVez)
 	pepe.cambioDeResultado(nada)
 	assert.equals(1050,pepe.sueldo())
 }
