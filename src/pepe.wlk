@@ -1,6 +1,6 @@
 object pepe {
 	var categoria = cadete
-	var presentismo = nofalto
+	var presentismo = noFalto
 	var resultado = sobreElNeto
 	
 	method cambioDeCategoria(categoriaNueva) {
@@ -41,14 +41,14 @@ object falto {
 	}
 }
 
-object faltounavez {
+object faltoUnaVez {
 	
 	method bono() {
 		return 50
 	}
 }
 
-object nofalto {
+object noFalto {
 	method bono() {
 		return 100
 	}
