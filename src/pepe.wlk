@@ -1,18 +1,18 @@
 object pepe {
 	var categoria = cadete
 	var presentismo = nofalto
-	var resultado = sobreelneto
+	var resultado = sobreElNeto
 	
-	method cambiodeCategoria(categorianueva) {
-		categoria = categorianueva
+	method cambioDeCategoria(categoriaNueva) {
+		categoria = categoriaNueva
 	}
 	
-	method cambiodePresentismo(presentismonuevo) {
-		presentismo = presentismonuevo
+	method cambioDePresentismo(presentismoNuevo) {
+		presentismo = presentismoNuevo
 	}
 	
-	method cambiodeResultado(resultadonuevo) {
-		resultado = resultadonuevo
+	method cambioDeResultado(resultadoNuevo) {
+		resultado = resultadoNuevo
 	}
 	
 	method sueldo() {
@@ -54,7 +54,7 @@ object nofalto {
 	}
 }
 
-object sobreelneto {
+object sobreElNeto {
 	method bono(categoria){
 		return categoria.neto()*0.10
 	}
