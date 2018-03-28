@@ -19,13 +19,13 @@ test "cadete-faltoUnaVez-sobreElNeto" {
 	pepe.cambioDePresentismo(faltoUnaVez)
 	assert.equals(1700,pepe.sueldo())
 }
-test "cadete-faltounavez-fijos" {
+test "cadete-faltoUnaVez-fijos" {
 	pepe.cambioDePresentismo(faltoUnaVez)
 	pepe.cambioDeResultado(fijo)
 	assert.equals(1630,pepe.sueldo())
 }
 
-test "cadete-faltounavez-nada" {
+test "cadete-faltoUnaVez-nada" {
 	pepe.cambioDePresentismo(faltoUnaVez)
 	pepe.cambioDeResultado(nada)
 	assert.equals(1550,pepe.sueldo())
